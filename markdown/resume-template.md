@@ -11,9 +11,9 @@
 - 冷熊/男/1990
 - 本科/北极大学计算机系
 - 工作年限：3 年
-- 微博：[@Easy](http://weibo.com/easy) （如果没有技术相关内容，也可以不放）
-- 技术博客：http://old.ftqq.com ( 使用 GitHub Host 的 Big 较高 )
-- Github：http://github.com/easychen ( 有原创 repo 的 Github 帐号会极大的提升你的个人品牌 )
+- 微博：[@xxx](http://weibo.com/xxx) （如果没有技术相关内容，也可以不放）
+- 技术博客：http://xxx.com ( 使用 GitHub Host 的 Big 较高 )
+- Github：http://github.com/xxx ( 有原创 repo 的 Github 帐号会极大的提升你的个人品牌 )
 
 - 期望职位：PHP 高级程序员，应用架构师
 - 期望薪资：税前月薪 15k~20k，特别喜欢的公司可例外
@@ -73,8 +73,8 @@
 
 （放置你代表公司在一些技术会议上做过的演讲，以及你在公司分享时制作的讲义）
 
-- 2014 架构师大会演讲：[如何通过 Docker 优化内部开发](http://ftqq.com)
-- 9 月公司内部分享：[云计算的前生今世](http://ftqq.com)
+- 2014 架构师大会演讲：[如何通过 Docker 优化内部开发](http://xxx.com)
+- 9 月公司内部分享：[云计算的前生今世](http://xxx.com)
 
 # 技能清单
 
