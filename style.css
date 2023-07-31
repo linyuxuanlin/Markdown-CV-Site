@@ -117,7 +117,9 @@ h3 {
   body {
     border: none;
     margin-top: 0px;
-    box-shadow: none; /* 清除页面的阴影效果 */
     width: 210mm;
+  }
+  body::before {
+    box-shadow: none; /* 清除页面的阴影效果 */
   }
 }
