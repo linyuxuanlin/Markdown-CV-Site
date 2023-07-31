@@ -74,15 +74,15 @@ xxx
 
 （对于程序员来讲，没有什么比 Show me the code 能有说服力了）
 
-- [A](http://github.com/yourname/projectname)：项目的简要说明，Star 和 Fork 数多的可以注明
-- [B](http://github.com/yourname/projectname)：项目的简要说明，Star 和 Fork 数多的可以注明
+- A(http://github.com/yourname/projectname)：项目的简要说明，Star 和 Fork 数多的可以注明
+- B(http://github.com/yourname/projectname)：项目的简要说明，Star 和 Fork 数多的可以注明
 
 ## 技术文章
 
 （挑选你写作或翻译的技术文章，好的文章可以从侧面证实你的表达和沟通能力，也帮助招聘方更了解你）
 
-- [信号完整新系列文章](https://wiki-power.com/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7-%E5%9F%BA%E7%A1%80%E6%A6%82%E5%BF%B5#_1)
-- [来基本元器件系列文章](https://wiki-power.com/%E5%9F%BA%E6%9C%AC%E5%85%83%E5%99%A8%E4%BB%B6-%E7%94%B5%E9%98%BB/)
+- A文章：https://xxx.com/a
+- B文章：https://xxx.com/b
 
 ## 演讲和讲义
 
