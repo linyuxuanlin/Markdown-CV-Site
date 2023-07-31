@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="title" id="resume-title"></div>
-    <div class="basic-info" id="resume-basic-info"></div>
+    <div class="paper">
+      <div class="title" id="resume-title"></div>
+      <div class="basic-info" id="resume-basic-info"></div>
 
-    <!-- Markdown内容将在这里显示 -->
-    <!-- 使用JavaScript库将Markdown转换为HTML -->
-    <div id="resume-content"></div>
+      <!-- Markdown内容将在这里显示 -->
+      <!-- 使用JavaScript库将Markdown转换为HTML -->
+      <div id="resume-content"></div>
+    </div>
+
+    <!-- 按钮容器 -->
+    <div class="button-container">
+      <!-- 悬浮按钮 -->
+      <button id="printButton">打印</button>
+      <!-- 生成PDF按钮 -->
+      <button id="generatePdfButton">生成PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.min.js"></script>
     <script src="script.js"></script>

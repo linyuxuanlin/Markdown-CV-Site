@@ -2,19 +2,79 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   max-width: 210mm; /* A4 纸宽度 */
-  margin: 0mm auto; /* 居中展示 */
+  margin: auto; /* 居中展示 */
   padding: 40px 30px 40px 30px; //top right bottom left
   box-sizing: border-box;
+  position: relative; /* 需要相对定位，以便伪元素相对于 body 定位 */
+  border: 3px solid black; /* 设置边框样式：2px宽度，实线，黑色颜色 */
+  margin-top: 80px; /* 将整个 body 内容往下移动 */
+
+  background-color: #e9e8e2;
 }
 
-/* 在打印页面的顶部添加额外的 padding */
 @media print {
   body {
-    padding-top: 30px; //top right bottom left
+    /* 在打印页面的顶部添加额外的 padding */
+    padding: 30px 30px 40px 30px; //top right bottom left
 
+    border: none;
     /* 将页面的内容宽度设置为A4纸的宽度，以确保与打印出来的页面尺寸一致 */
     width: 210mm;
+    box-shadow: none; /* 清除页面的阴影效果 */
+
+    .button-container {
+      display: none;
+    }
+    /* 隐藏body之外的元素 */
+  body *:not(body) {
+    display: none;
   }
+  }
+}
+
+.paper {
+  background-color: white;
+}
+
+.button-container {
+  position: fixed; /* 设置按钮为固定定位 */
+  bottom: 20px; /* 距离浏览器窗口底部的距离 */
+  right: 20px; /* 距离浏览器窗口右侧的距离 */
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: space-around; /* 将按钮水平居中排列，并平均分配间距 */
+  margin-bottom: 20px; /* 添加一些间距，使按钮与页面内容分开 */
+}
+
+#printButton,
+#generatePdfButton {
+  z-index: 999; /* 设置按钮在页面的层级，避免被其他内容遮挡 */
+  padding: 10px 16px; /* 设置按钮的内边距 */
+  border: none; /* 去除按钮的边框 */
+  border-radius: 10px; /* 设置按钮的圆角弧度 */
+  background-color: #ffffff; /* 设置按钮的背景颜色为浅灰色 */
+  color: #000; /* 设置按钮的文本颜色为黑色 */
+  font-size: 16px; /* 设置按钮的文本字体大小 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 添加按钮的阴影效果 */
+  margin-right: 15px; /* Add margin between the buttons */
+}
+
+#printButton:hover,
+#generatePdfButton:hover {
+  background-color: #dcdcdc; /* 设置按钮的背景颜色，当鼠标悬停在按钮上时 */
+  cursor: pointer; /* 当鼠标悬停在按钮上时，显示手型光标 */
+}
+
+body::before {
+  content: ""; /* 必须设置 content 属性，伪元素才会显示 */
+  position: absolute; /* 使用绝对定位，覆盖在 body 上方 */
+  top: -30px; /* 负值：往上拓展一圈 */
+  right: -30px; /* 负值：往右拓展一圈 */
+  bottom: -30px; /* 负值：往下拓展一圈 */
+  left: -30px; /* 负值：往左拓展一圈 */
+
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: -1; /* 使伪元素在 body 下方 */
+  background-color: white;
 }
 
 .title {
