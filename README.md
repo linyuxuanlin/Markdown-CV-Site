@@ -1,5 +1,13 @@
 # Markdown-CV-Site
 
-用 Markdown 写一份可在线预览，也可导出 PDF 的简历。
+用 Markdown 撰写一份方便预览、可直接打印的简历。
 
-具体文章详见：[**如何用 Markdown 写一份简历**](https://wiki-power.com/%E5%A6%82%E4%BD%95%E7%94%A8Markdown%E5%86%99%E4%B8%80%E4%BB%BD%E7%AE%80%E5%8E%86)
+![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/202307312227029.png)
+
+特点：
+
+- 简历简单明了，访问站点即刻呈现。
+- 右下角一键打印简历，亦可输出 PDF 格式，方便递交纸质版。
+- 页面比例保持不变，网页呈现与打印样式完全相同，方便排版。
+- 可本地部署，仅需专注于内容，双击 `index.html` 也可正常使用。
+
