@@ -1,6 +1,6 @@
 # Markdown-CV-Site
 
-用 Markdown 撰写一份方便预览、可直接打印的简历。
+用 Markdown 撰写一份方便预览、可打印的简历。
 
 **预览网址**：[**cv-template.wiki-power.com**](https://cv-template.wiki-power.com/)
 
