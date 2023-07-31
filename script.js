@@ -28,3 +28,38 @@ printButton.addEventListener('click', () => {
     window.print(); // 调用浏览器的打印功能
 });
 
+
+
+
+// 更新页面缩放
+function updateZoom() {
+    var pageWidth = window.innerWidth;
+    var initialZoom;
+  
+     根据页面宽度设置缩放比例
+    if (pageWidth < 1000&& pageWidth >=800) {
+      initialZoom = 0.8;
+    } else if (pageWidth < 800&& pageWidth >=700) {
+      initialZoom = 0.7;
+    } else if (pageWidth < 700&& pageWidth >=600) {
+      initialZoom = 0.6;
+    } else if (pageWidth < 500&& pageWidth >=400) {
+      initialZoom = 0.5;
+    } else if (pageWidth < 400) {
+      initialZoom = 0.1;
+    } else {
+        initialZoom = 0.1;
+    }
+
+    //initialZoom=pageWidth
+  
+    // 设置缩放
+    document.body.style.zoom = initialZoom;
+  
+  }
+  
+  // 初始加载时执行一次
+  updateZoom();
+  
+  // 监听窗口大小变化，触发更新缩放
+  window.addEventListener('resize', updateZoom);
