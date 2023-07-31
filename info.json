@@ -1,7 +1,6 @@
 {
-    "name": "张三",
-    "phone": "123-456-7890",
-    "email": "zhangsan@example.com", //建议用 outlook 或 gmail，不要用 qq 邮箱
-    "website": "https://xxx.com" //如果没有的话就注释掉
-  }
-  
+  "name": "张三",
+  "phone": "123-456-7890",
+  "email": "zhangsan@example.com",
+  "website": "https://xxx.com" 
+}
