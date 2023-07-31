@@ -2,7 +2,7 @@
 
 用 Markdown 撰写一份方便预览、可直接打印的简历。
 
-![](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/202307312227029.png)
+![1](https://wiki-media-1253965369.cos.ap-guangzhou.myqcloud.com/img/202307312227029.png)
 
 特点：
 
