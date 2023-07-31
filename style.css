@@ -1,3 +1,6 @@
+.paper {
+  background-color: white;
+}
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -8,11 +11,16 @@ body {
   position: relative; /* 需要相对定位，以便伪元素相对于 body 定位 */
   border: 3px solid black; /* 设置边框样式：2px宽度，实线，黑色颜色 */
   margin-top: 80px; /* 将整个 body 内容往下移动 */
-
   background-color: #e9e8e2;
 }
 
 @media print {
+  body::before {
+    content: none;
+  }
+  .paper {
+    content: none;
+  }
   body {
     /* 在打印页面的顶部添加额外的 padding */
     padding: 30px 30px 40px 30px; //top right bottom left
@@ -25,15 +33,7 @@ body {
     .button-container {
       display: none;
     }
-    /* 隐藏body之外的元素 */
-  body *:not(body) {
-    display: none;
   }
-  }
-}
-
-.paper {
-  background-color: white;
 }
 
 .button-container {
@@ -45,8 +45,7 @@ body {
   margin-bottom: 20px; /* 添加一些间距，使按钮与页面内容分开 */
 }
 
-#printButton,
-#generatePdfButton {
+#printButton {
   z-index: 999; /* 设置按钮在页面的层级，避免被其他内容遮挡 */
   padding: 10px 16px; /* 设置按钮的内边距 */
   border: none; /* 去除按钮的边框 */
@@ -58,8 +57,7 @@ body {
   margin-right: 15px; /* Add margin between the buttons */
 }
 
-#printButton:hover,
-#generatePdfButton:hover {
+#printButton:hover {
   background-color: #dcdcdc; /* 设置按钮的背景颜色，当鼠标悬停在按钮上时 */
   cursor: pointer; /* 当鼠标悬停在按钮上时，显示手型光标 */
 }
